@@ -1,0 +1,105 @@
+
+ @font-face{
+
+   font-family: Titillium ;   /*any name you want*/
+   src: url(../GoogleFonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+
+}
+
+ h1{
+
+font-family:" Titillium ";
+font-size: 40px;
+font-weight: 500;
+color: #17A2B8;
+
+ }
+
+
+ body{
+
+   background-color:#26353F;
+ }
+
+ 
+ .form-control::placeholder {
+   color: rgb(220, 220, 220); /* لون النص */
+   font-style: italic; /* يمكن إضافة أسلوب النص أيضًا */
+   opacity: 0.8; /* للتحكم بشفافية النص */
+ }
+ 
+
+
+ #signup,#signin{
+
+background-color: transparent;
+outline: none;
+border:  solid #17A2B8 2px;
+color: #17A2B8 ;
+ transition: all 0.5s;
+ }
+ #signup:hover,#signin:hover{
+
+   background-color: #17A2B8;
+  
+   color: #ffffff ;
+   
+    }
+#notification{
+   opacity: 0;
+   display: none;
+}
+
+
+.animationfornotification{
+
+animation-name: notification;
+animation-duration: 3s;
+}
+
+@keyframes notification{
+
+0%,70%{
+
+   opacity: 1;
+}
+100%{
+
+   opacity: 0;
+
+}
+
+
+
+}
+
+.myshadow{
+      box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+
+}
+
+a.signin{
+   text-decoration: none;
+   
+   }
+a.signin:hover{
+text-decoration: underline;
+
+}
+
+.loginform p{
+
+   font-size: 18px;
+}
+
+
+.welcome{
+
+
+   height: 500px;
+}
+
+.nav-link{
+
+   border: solid rgb(165, 23, 23);
+}

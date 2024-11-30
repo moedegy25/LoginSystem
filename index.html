@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-8 m-auto myshadow ">
+          <div class="loginform px-5 pt-5 pb-3 ">
+            <h1 class="text-center"> Smart Login System</h1>
+            <div class="input-group mb-3 mt-2 shadow d-block" >
+                <input id="email" class="form-control w-100  bg-transparent rounded-2 text-white" type="email" required name="email" placeholder="Enter your email"/> 
+                <!-- <div class="alert alert-danger d-none"> Site name must contain contain only letters or numbers and at least 3 characters  </div> -->
+                </div>
+            
+                <div class="input-group mb-3 mt-2 shadow d-block" >
+                <input id="password" class="form-control w-100   bg-transparent rounded-2 text-white" type="password"  required  name="password" placeholder="Enter your password"/> 
+                <!-- <div class="alert alert-danger d-none"> Site name must contain contain only letters or numbers and at least 3 characters  </div> -->
+                </div>
+            
+
+                <input id="signin"  onclick="signin()" type="button" class="d-block w-100   rounded-2"  value="signin"  width="60" height="25" alt="submit"/> 
+                <div  id="notification"class="alert alert-success text-center   " role="alert">
+                    login successfully    <i class="fa-solid fa-spinner fa-spin-pulse"></i>                </div> 
+              <p class="text-center text-white mt-3"> Don’t have an account? <a href="index2.html" class="signin  text-white">SignUp</a></p>
+    
+            </div> 
+            
+    
+        </div>
+    </div>
+       </div>
+    
+
+
+
+
+
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script src="js/bootstrap.bundle.min.js"> </script>
+<script src="js/index.js"> </script>
+
+</body>
+</html>

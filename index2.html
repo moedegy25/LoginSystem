@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+   <div class="container mt-5">
+    <div class="row">
+    <div class="col-8 m-auto myshadow ">
+      <div class="loginform px-5 pt-5 pb-3 ">
+        <h1 class="text-center"> Smart Login System</h1>
+        <div class="input-group   shadow d-block  m-auto mb-3 " >
+        <input id="userName" class="form-control w-100  bg-transparent rounded-2 text-white" type="text" required name="userName" placeholder="Enter your name"/>   
+        <div class="alert alert-danger d-none"> User name must contain contain only letters or numbers and at least 4 characters  </div>   
+        </div>
+    
+        <div class="input-group   shadow d-block  m-auto mb-3 "  >
+        <input id="email2" class="form-control w-100 bg-transparent rounded-2 text-white" type="email" required name="email" placeholder="Enter your email"/> 
+        <div class="alert alert-danger d-none"> The email address must be valid.  </div>
+        </div>
+    
+        <div class="input-group   shadow d-block  m-auto mb-4 " >
+        <input id="password2" class="form-control w-100 bg-transparent rounded-2 text-white" type="password"  required  name="password" placeholder="Enter password"/>
+        <div class="alert alert-danger d-none"> The password must contain capital letters,small letters,numbers,and symbols,and at least 8 characters  </div>
+        </div> 
+    
+        
+        <input  id="signup"  class=" m-auto d-block w-100 rounded-2 py-2 "  onclick="adduser()" type="button"  width="80" height="25" alt="submit" value="signup"/> 
+        <div  id="notification"class="alert alert-success text-center   " role="alert">
+          Registration has been successfully completed. <i class="fa-solid fa-spinner fa-spin-pulse"></i>    </div>
+          <p class="text-center text-white mt-3"> You have an account? <a href="index.html" class="signin  text-white">Signin</a></p>
+
+        </div> 
+        
+
+    </div>
+  </div>
+   </div>
+
+
+ 
+    
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script src="js/bootstrap.bundle.min.js"> </script>
+<script src="js/index2.js"> </script>
+
+</body>
+</html>
